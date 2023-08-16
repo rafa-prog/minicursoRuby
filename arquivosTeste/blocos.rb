@@ -16,19 +16,22 @@ coisa() do
 end
 
 
-def coisa
-    puts 'jhahhaha'
 
-    #bloco de codigo inserido com o do
+
+def createTable(nome_tabela)
+    # fazer coisas de BD
     yield
-
-    puts 'eoq'
 end
 
-coisa() do
-    puts 'coisa a mais na função'
+createTable('carro') do
+    nome = 'carro do ovo'
+    cor = 'vermeio'
+    rodas = 'sim'
 end
 
-coisa() do
-    puts 'mais ainda coisa na função'
+
+
+[1,2,3].each do |valor|
+    # da p usar aq tb
+    yield
 end
